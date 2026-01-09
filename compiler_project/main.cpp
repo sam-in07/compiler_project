@@ -7,9 +7,11 @@ void runOption1();
 // Option 2: 3-Address Code Generation
 void runOption2();
 
-int main() {
+int main()
+{
     int choice;
-    do {
+    do
+    {
         cout << "\n===== MiniLang Compiler Menu =====\n";
         cout << "1. Lexical Analyzer and Statement Validator\n";
         cout << "2. Three Address Code Generator\n";
@@ -18,18 +20,19 @@ int main() {
         cin >> choice;
         cin.ignore(); // flush newline
 
-        switch (choice) {
-            case 1:
-                runOption1();
-                break;
-            case 2:
-                runOption2();
-                break;
-            case 0:
-                cout << "Exiting MiniLang Compiler. Goodbye!\n";
-                break;
-            default:
-                cout << "Invalid choice. Please try again.\n";
+        switch (choice)
+        {
+        case 1:
+            runOption1();
+            break;
+        case 2:
+            runOption2();
+            break;
+        case 0:
+            cout << "Exiting MiniLang Compiler. Goodbye!\n";
+            break;
+        default:
+            cout << "Invalid choice. Please try again.\n";
         }
     } while (choice != 0);
 
